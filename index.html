@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- Author: Jeremy Edwards -->
+<html>
+  <head>
+    <title>Gathering Input</title>
+    <meta charset="utf-8" />
+      <link rel="stylesheet" type="text/css" href="bio.css">
+    <script> function getName () {
+      var fullName;
+      fullName = document.getElementById("first").value;
+      fullName += " " + document.getElementById("last").value;
+      document.getElementById("message").innerHTML = fullName;
+    }</script>
+  </head>
+    <body>
+      <input type="text" id="first">
+      <input type="text" id="last">
+      <button id="doneButton" type="button" onclick="getName();">done</button>
+      <p id="message">
+      </p>
+    </body>
+</html>
